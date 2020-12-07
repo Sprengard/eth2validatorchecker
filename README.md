@@ -11,7 +11,7 @@ apt update && apt upgrade && apt install jq mailutils curl
 ```
 
 ## Usage
-Best you run this scipt not on the validator machine.
+It is the best that you don't run this script on the validator system itself
 
 Fill in your #Validator and your Mailaddress.
 ```bash
@@ -21,7 +21,7 @@ Poll it regulary via crontab.
 ```bash
 crontab -e
 ```
-Add the following line, i propose around 5s.
+Add the following line, I propose around 5 s
 ```bash
 */5 * * * * /path/to/eth2validatorchecker/eth2validatorchecker.sh
 ```
